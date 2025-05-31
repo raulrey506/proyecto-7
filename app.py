@@ -2,9 +2,6 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Encabezado de la app
-st.title("Visualizador de Datos de Vehículos Usados")
-
 # Cargar los datos (asegúrate de tener el archivo en la ruta correcta)
 car_data = pd.read_csv('vehicles_us.csv')
 
