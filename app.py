@@ -19,6 +19,7 @@ if st.button("Mostrar gráfico de dispersión"):
                      labels={"odometer": "Kilometraje", "price": "Precio"})
     st.plotly_chart(fig)
 
+
 mostrar_histograma = st.checkbox("Mostrar histograma de anuncios por marca")
 
 if mostrar_histograma:
@@ -29,4 +30,3 @@ if mostrar_histograma:
                       title="Cantidad de anuncios por marca de coche",
                       labels={'manufacturer': 'Marca', 'count': 'Número de anuncios'})
     st.plotly_chart(fig_hist)
-
