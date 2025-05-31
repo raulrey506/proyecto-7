@@ -173,3 +173,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 notebooks/requirements.txt
+notebooks/app.py
+notebooks/test.py
+notebooks/vehicles_us.csv
