@@ -2,10 +2,11 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv('vehicles_us.csv') # leer los datos'
+# Encabezado de la app
+st.title("Visualizador de Datos de Vehículos Usados")
 
-# Encabezado principal
-st.header("visualizador de datos de venta de coches")
+# Cargar los datos (asegúrate de tener el archivo en la ruta correcta)
+car_data = pd.read_csv('vehicles_us.csv')
 
 # Mostrar una vista previa de los datos
 st.subheader("Vista previa del conjunto de datos")
@@ -17,7 +18,4 @@ if st.button("Mostrar gráfico de dispersión"):
                      title="Relación entre kilometraje y precio por tipo de vehículo",
                      labels={"odometer": "Kilometraje", "price": "Precio"})
     st.plotly_chart(fig)
-
-
-
 
