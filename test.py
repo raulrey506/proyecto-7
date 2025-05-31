@@ -1,8 +1,3 @@
-import sys
-print(sys.executable)
-
-import pandas as pd
-import plotly.express as px
-import streamlit as st
 
 
+# streamlit run app.py
