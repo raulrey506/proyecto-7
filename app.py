@@ -34,9 +34,3 @@ if st.checkbox("Mostrar histogramas de modelos con más de 1000 anuncios"):
                       labels={'model': 'Modelo', 'count': 'Cantidad de anuncios'})
     st.plotly_chart(fig_hist)
 
-
-
-
-
-
-    
